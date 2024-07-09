@@ -7,18 +7,18 @@
 
     <h1>Alcohol outlets in Baltimore</h1>
     
-    For a reporting project, I've been looking at alcohol outlets in Baltimore. The city sent me their most recent "master list" of the businesses licensed to sell alcohol, including their name and address. File: 240520_Baltimore_master.csv
+    For a reporting project, I've been looking at alcohol outlets in Baltimore. The city sent me their most recent "master list" of the businesses licensed to sell alcohol, including their name and address. <b>File: 240520_Baltimore_master.csv</b>
     
     <p>I geocoded the data, looked at values that didn't code propertly, and integrated cleaning code and ultimately some manual changes to get them all to generate latitude and longituded. <b>Jupyter notebook: Baltimore alcohol cleaning and geocoding.</b></p>
     
     <p>Then with a big boost to start from TA Thomas, I identifed outlets with particular license-types that are not allowed to be in residential areas, but appear to be. <b>Jupyter notebook: identifying zoning</b>
     
-    <p>I output a list of these irregular outlets. And I pushed the data — first from Python to CSV, then to Geojson, then to Mapbox — into a map that shows the residentially zoned areas, the alcohol outlets, those the Baltimore City government concedes are out of conformance with zoning law, and the couple dozen outlets that appear to be based on my analysis.</p>
+    <p>I output a list of these irregular outlets. And I pushed the data — first from Python to CSV, then to Geojson, then to Mapbox — into a map that shows the residentially zoned areas  <span style="color: lightgreen">(light green)</span>, the alcohol outlets, those the Baltimore City government concedes are out of conformance with zoning law <span style="color: red">(red outline)</span>, and the couple dozen outlets that appear to be based on my analysis <span style="color: orange">(orange outline)</span>.</p>
 
 
     <iframe width='80%' height='1000px' src="https://api.mapbox.com/styles/v1/tedalcorn/cly9350pm00lg01r1hpel7y3x.html?title=false&access_token=pk.eyJ1IjoidGVkYWxjb3JuIiwiYSI6ImNseGRpNGdvNzA2enUyanBzbGI2YTRjNjIifQ.Z92PAuKJ9CpLevlKT0y9vw&zoomwheel=false#13.51/39.2935/-76.63234" title="Baltimore liquor licenses" style="border:none;"></iframe>
   
-  This is the repository: https://github.com/tedalcorn/BaltimoreAlcohol
+  This is the Github repository: https://github.com/tedalcorn/BaltimoreAlcohol
 
   </body>
 </html>
